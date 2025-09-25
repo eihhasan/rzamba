@@ -7,12 +7,12 @@ import { useRef, useState } from "react";
 export function Hero() {
   return (
     <>
-      <div className="relative min-h-screen md:min-h-0 h-[95vh]  flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="py-3 relative min-h-screen md:min-h-0 h-[95vh]  flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Left Section */}
             <div className="col-span-1">
-              <div className="flex flex-col gap-6 mb-0 md:mb-20 mt-5 md:mt-0">
+              <div className="flex flex-col gap-6 mb-0 md:mb-20 mt-5 md:mt-0 pt-6 sm:pt-6">
                 {/* Heading */}
                 <h1 className="leading-tight text-3xl xs:text-4xl sm:text-5xl md:text-5xl font-semibold max-[375px]:text-xl max-[375px]:flex max-[375px]:flex-col max-[375px]:gap-1 max-[414px]:text-2xl text-[#f4f1f7]">
                   Welcome to
