@@ -49,9 +49,9 @@ export function Values() {
               className="group relative rounded-2xl overflow-hidden border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10"
             >
               {/* Card number indicator */}
-              <div className="absolute top-4 left-4 z-10 w-8 h-8 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center text-primary font-bold text-sm">
+              {/* <div className="absolute top-4 left-4 z-10 w-8 h-8 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center text-primary font-bold text-sm">
                 {index + 1}
-              </div>
+              </div> */}
 
               {/* Image container with enhanced styling */}
               <div className="relative overflow-hidden h-56 md:h-64">
@@ -81,7 +81,7 @@ export function Values() {
               </div>
 
               {/* Content section */}
-              <div className="p-6 md:p-8">
+              <div className="p-4 md:p-4">
                 <h3 className="font-bold text-x md:text-2xl  mb-3 text-black group-hover:bg-gradient-to-r group-hover:from-green-600 group-hover:to-blue-600 group-hover:bg-clip-text group-hover:text-transparent transition-all">
                   {v.title}
                 </h3>
