@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 export function Hero() {
   return (
     <>
-      <div className="relative border border-amber-300 min-h-screen md:min-h-0 h-[95vh]  flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="relative min-h-screen md:min-h-0 h-[95vh]  flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Left Section */}
@@ -79,7 +79,7 @@ export function Hero() {
               </div>
 
               {/* Floating Card - 1 - Positioned absolutely relative to the right section container */}
-              <div className="absolute top-5 left-2 sm:left-4 w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-lg flex justify-center items-center z-55 border-0 animate-[bounce_1.8s_infinite]">
+              <div className="hidden sm:flex absolute top-5 left-2 sm:left-4 w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-lg justify-center items-center z-55 border-0 animate-[bounce_1.8s_infinite]">
                 <img
                   src="/circle1.jpg"
                   alt="about"
@@ -87,8 +87,8 @@ export function Hero() {
                 />
               </div>
 
-              {/* Floating Card - 2 - Positioned absolutely relative to the right section container */}
-              <div className="absolute top-4 sm:top-8 left-[40%] sm:left-[33vw] w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-lg flex justify-center items-center z-50 border-0 animate-[bounce_1.6s_infinite]">
+              {/* Floating Card - 2 - Positioned hidden sm:flex absolutely relative to the right section container */}
+              <div className="hidden sm:flex absolute top-4 sm:top-8 left-[40%] sm:left-[33vw] w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-lg justify-center items-center z-50 border-0 animate-[bounce_1.6s_infinite]">
                 <img
                   src="/circle2.png"
                   alt="about"
@@ -97,7 +97,7 @@ export function Hero() {
               </div>
 
               {/* Floating Card - 3 - Positioned absolutely relative to the right section container */}
-              <div className="absolute top-40 sm:top-52 left-32 sm:left-52 w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-lg flex justify-center items-center z-50 border-0 animate-[bounce_1.5s_infinite]">
+              <div className="hidden sm:flex absolute top-40 sm:top-52 left-32 sm:left-52 w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-lg justify-center items-center z-50 border-0 animate-[bounce_1.5s_infinite]">
                 <img
                   src="/gallery1.webp"
                   alt="about"
