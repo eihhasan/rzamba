@@ -7,6 +7,10 @@ import { Suspense } from "react";
 import { Poppins } from "next/font/google";
 
 import "./globals.css";
+import { SidebarFooter } from "@/components/ui/sidebar";
+import { MainNav } from "@/components/site/main-nav";
+import { ResizeableNavbar } from "@/components/site/resizeable-appbar";
+import { SiteFooter } from "@/components/site/footer";
 
 export const metadata: Metadata = {
   title: "Rzamba Foundation",
@@ -21,7 +25,7 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins", // optional, tailwind ke saath
+  variable: "--font-poppins",
 });
 
 export default function RootLayout({
@@ -34,7 +38,18 @@ export default function RootLayout({
       <body
         className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased scroll-smooth`}
       >
-        <Suspense fallback={null}>{children}</Suspense>
+        {/* Topbar */}
+        <ResizeableNavbar />
+
+        {/* Main Content */}
+        <main className="min-h-screen">{children}</main>
+
+        {/* Footer */}
+        <SiteFooter />
+
+        {/* Optional Sidebar Footer */}
+        <SidebarFooter />
+
         <Analytics />
       </body>
     </html>
