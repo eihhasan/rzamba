@@ -32,6 +32,7 @@ export default function Page() {
       <Team />
       {/* <Testimonials /> */}
       <Newsletter />
+      <SiteFooter />
     </main>
   );
 }

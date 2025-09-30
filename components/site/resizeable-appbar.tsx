@@ -198,13 +198,26 @@ export function ResizeableNavbar() {
 
         {/* Mobile Navigation Menu */}
         <MobileNav isOpen={isMobileMenuOpen}>
-          <MobileNavHeader onClose={() => setIsMobileMenuOpen(false)} />
-          <MobileNavMenu>
+          <MobileNavHeader>
+            {/* Mobile Header with Logo and Close Button */}
+            <div className="flex items-center justify-between w-full">
+              <NavbarLogo />
+              <MobileNavToggle
+                isOpen={isMobileMenuOpen}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              />
+            </div>
+          </MobileNavHeader>
+
+          <MobileNavMenu
+            isOpen={isMobileMenuOpen}
+            onClose={() => setIsMobileMenuOpen(false)}
+          >
             {navItems.map((item, index) => (
               <div key={index}>
                 {item.dropdown ? (
                   // Get involved dropdown for mobile (click)
-                  <div className="border-b border-gray-200">
+                  <div className="border-b border-red-900">
                     <button
                       onClick={() => {
                         setIsGetInvolvedOpen(!isGetInvolvedOpen);
